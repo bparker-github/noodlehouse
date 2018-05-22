@@ -1,0 +1,45 @@
+{
+  "name": "noodlehouse",
+  "version": "1.0.0",
+  "description": "Main site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/webpack --mode production && cp ./src/index.html ./dist/",
+    "start": "webpack -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bparker-github/noodlehouse.git"
+  },
+  "author": "Ben Parker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bparker-github/noodlehouse/issues"
+  },
+  "homepage": "https://github.com/bparker-github/noodlehouse#readme",
+  "dependencies": {
+    "@blueprintjs/core": "^2.3.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-fns": "^1.4.0",
+    "react-transition-group": "^2.3.1",
+    "scroll-swipe": "0.0.13",
+    "source-map": "^0.7.3",
+    "typescript": "^2.8.3",
+    "window-or-global": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.3.14",
+    "@types/react-dom": "^16.0.5",
+    "@types/react-transition-group": "^2.0.9",
+    "awesome-typescript-loader": "^5.0.0",
+    "css-loader": "^0.28.11",
+    "prettier": "^1.12.1",
+    "style-loader": "^0.21.0",
+    "tslint": "^5.10.0",
+    "tslint-react": "^3.6.0",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3"
+  }
+}

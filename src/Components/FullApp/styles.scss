@@ -1,0 +1,24 @@
+html,
+body,
+#app,
+.fullpage,
+.slide {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.fullpage {
+  display: block;
+  overflow: hidden;
+  position: fixed;
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s ease 0s;
+  position: relative;
+  font-family: 'Gloria Hallelujah', cursive;
+}
