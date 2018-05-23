@@ -45,7 +45,7 @@ export class FullPage extends React.Component<IFullPageProps, IFullPageState> {
       <div ref={c => (this.fullPageEle = c)} className={Constants.Classes.FullPage}>
         <Footer
           content={
-            <React.Fragment>
+            <div className={Constants.Classes.FooterButtons}>
               <Button
                 minimal={true}
                 large={true}
@@ -60,7 +60,7 @@ export class FullPage extends React.Component<IFullPageProps, IFullPageState> {
                 onClick={this.scrollDown}
                 text="DOWN"
               />
-            </React.Fragment>
+            </div>
           }
         />
         {this.props.slideConfigs.map((conf, i) => (

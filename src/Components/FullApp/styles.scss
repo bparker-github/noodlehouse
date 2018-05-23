@@ -3,6 +3,7 @@ body,
 #app,
 .fullpage,
 .slide {
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
   width: 100%;
   height: 100%;
   margin: 0;
@@ -41,7 +42,27 @@ body,
   opacity: 1;
 }
 
+.footer>*:focus {
+  outline: 0;
+}
+
+.footer-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.footer-buttons:first-child {
+  margin-left: 8px;
+}
+
+.footer-buttons>* {
+  margin-right: 8px;
+}
+
 .footer-scroll-down,
 .footer-scroll-up {
-  flex: 1 0 50%;
+  flex: 1 0 0%;
 }
