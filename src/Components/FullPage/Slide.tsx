@@ -1,16 +1,18 @@
 import * as React from 'react';
+import { Constants } from './FullPageConstants';
 
 export interface ISlideProps {
+  id: string;
   content: string;
-  backgroundColor?: string;
+  styles?: React.CSSProperties;
 }
 
 export class Slide extends React.Component<ISlideProps> {
   render() {
     return (
-      <section className="slide" style={{ backgroundColor: this.props.backgroundColor }}>
+      <div id={this.props.id} className={Constants.Classes.Slide} style={this.props.styles}>
         <div style={{ fontSize: '32px', fontWeight: 'bold' }}>{this.props.content}</div>
-      </section>
+      </div>
     );
   }
 }

@@ -22,3 +22,26 @@ body,
   position: relative;
   font-family: 'Gloria Hallelujah', cursive;
 }
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 8px 0;
+  opacity: 0.3;
+  width: 100%;
+  z-index: 10;
+  bottom: 0;
+}
+
+.footer:hover {
+  transition: opacity 200ms;
+  opacity: 1;
+}
+
+.footer-scroll-down,
+.footer-scroll-up {
+  flex: 1 0 50%;
+}

@@ -3,15 +3,16 @@ import { FullPage } from '../FullPage/FullPage';
 import { ISlideProps } from '../FullPage/Slide';
 
 import './styles.scss';
+import '@blueprintjs/core/lib/css/blueprint.css';
 
 export class FullApp extends React.Component {
   render() {
     const slidesConfig: ISlideProps[] = [
-      { content: 'You so', backgroundColor: '#ffb0b0' },
-      { content: 'fuckin', backgroundColor: '#f6f3b4' },
-      { content: 'prescious', backgroundColor: '#dbf9b9' },
-      { content: 'when you', backgroundColor: '#c8e2f2' },
-      { content: 'smile', backgroundColor: '#d9c0ec' }
+      { id: '0', content: 'You so', styles: { backgroundColor: '#ffb0b0' } },
+      { id: '1', content: 'fuckin', styles: { backgroundColor: '#f6f3b4' } },
+      { id: '2', content: 'prescious', styles: { backgroundColor: '#dbf9b9' } },
+      { id: '3', content: 'when you', styles: { backgroundColor: '#c8e2f2' } },
+      { id: '4', content: 'smile', styles: { backgroundColor: '#d9c0ec' } }
     ];
     return <FullPage slideConfigs={slidesConfig} />;
   }
